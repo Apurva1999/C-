@@ -1,0 +1,140 @@
+ <html>
+<head>
+ <style>
+ 
+    </style>
+  <script>
+   function valid()
+ {
+  for(i=0;i<ff.q.length;i++)
+  {
+   if(ff.q[i].selected)
+   {
+    alert("marks is mandatory for selection!");
+    return false;
+   }
+  }
+ } 
+  </script>
+  </head>
+<body bgcolor="yellow">
+ <form name="frm">
+ <table>
+ <h1><center><font color="green">Application Form</center></h1>
+  <tr>
+ <td>Name:</td>
+ <td>
+ <input type="text" name="name">
+   </td>
+     </tr>
+   <tr>
+  <td>Qualifications:</td>
+  <td>
+ <select name="q">
+  <option>HSC</option>
+  <option>Graduate</option>
+    </select>
+     </td>
+    </tr>
+ <tr>
+  <td>Exam:<br/>
+  
+   <input type="text" name="per" size="5">
+  </td>
+<td>
+  Persantage:<br/>
+ <input type="text" name="per" size="5">
+ </td>
+ <td>
+  Class:<br/>
+  <input type="text" name="cl" size="5">
+    </td>
+    </tr>
+  <tr>
+  <td>Email:</td>
+  <td>
+  <input type="email" name="email">
+  </td>
+    </tr>
+ <tr>
+  <td>MO.</td>
+  <td>
+  <input type="text" name="mo">
+    </td>
+  </tr>
+ <tr>
+  <td>Course:</td>
+  <td>
+   <select>
+ <option>BCA</option>
+ <option>BBA</option>
+ <option>B.COM</option>
+ <option>PGDBM</option>
+ <option>MCA</option>
+ <option>MBA</option>
+  <option>M.COM</option>
+  </select>
+     </td>
+  </tr>
+  <tr>
+  <td><strong>Document Upload:</strong></td></tr>
+ <tr>
+  <td><font color="red">Document shoud be upload in .jpg/.pdf formate and size will be less than 200kb.</font></td>
+    </tr>
+ <tr>
+ <td>Marksheet:</td>
+  <td>
+<input type="file">
+    </td>
+ <td>seat No:</td>
+ <td>
+ <input type="text" name="seat" size="5">
+ </td>
+   </tr>
+ <tr>
+  <td>Photo:</td>
+  <td>
+ <input type="file">
+  </td>
+   </tr>
+ <tr>
+   <td>cast certificate:</td>
+ <td>
+  <input type="file">
+   </td>
+ <td>certificate No:</td>
+ <td>
+ <input type="text" name="cer" size="5">
+    </td>
+  </tr>
+<tr>
+ <td>Aadhar Card:</td>
+ <td>
+  <input type="file">
+    </td>
+  <td>Aadhar No:</td>
+<td>
+  <input type="text" name="aadhar" size="5">
+   </td>
+   </tr>
+<tr>
+ <td>Leaving certificate:</td>
+ <td>
+  <input type="file">
+   </td>
+ <td>certificate No:</td>
+ <td>
+  <input type="text" name="cer2" size="5">
+ </td>
+   </tr>
+ <tr>
+ <td>
+  <input type="submit" value="Apply" name="apply" onclick="return valid()"></td><td>
+ <input type="reset" value="Reset" name="reset">
+    </td>
+   </tr>
+    </tr>
+   </table>
+   </form>
+   </body>
+   </html>
